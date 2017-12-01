@@ -10,7 +10,6 @@
 int bar(char *arg, char *out)
 {
 	char* buf2 = arg;  
-	//@ slice pragma stmt;
 	strcpy(out, buf2);
 	test();
 	return 0;
@@ -27,7 +26,6 @@ int foo(char *arg)
 
 int main(int argc, char *argv[])
 {
-	//@ slice pragma stmt;
 	if (argc != 2)
 	{
 		//@ slice pragma stmt;
