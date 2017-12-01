@@ -10,8 +10,10 @@
 int bar(char *arg, char *out)
 {
 	char* buf2 = arg;  
+	if (sizeof(buf2) <= sizeof(out))
+	{
 	strcpy(out, buf2);
-	test();
+	}
 	return 0;
 }
 
